@@ -1,5 +1,5 @@
 function hello(name) {
-  return name; // IMPLEMENTE
+  return `Hello, ${name}!`; // IMPLEMENTE
 }
 
 describe('hello', function() {

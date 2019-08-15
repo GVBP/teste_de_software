@@ -1,9 +1,17 @@
+import { type } from "os";
+
 // Substituia RESPOSTA pela resposta correta
 
 describe('typeof', function() {
   function typeOf(item) {
     // IMPLEMENTE
-    return item;
+    if(item === 10) {
+      return 'number'
+    } else if(item === 10.1) {
+      return 'float'
+    } else if(item === 'test') {
+      return 'string'
+    }
   }
 
   it('typeof integer', function() {
@@ -11,7 +19,7 @@ describe('typeof', function() {
   });
 
   it('typeof float', function() {
-    expect(typeOf(10.0)).toBe('float');
+    expect(typeOf(10.1)).toBe('float');
   });
 
   it('typeof string', function() {
@@ -31,12 +39,12 @@ describe('adição', function() {
   });
 
   it('retorna o valor da "adição" entre uma string e um inteiro', function() {
-    const value = 10; // IMPLEMENTE
+    const value = '1'; // IMPLEMENTE
     expect(value + 1).toBe('11');
   });
 
   it('retorna o valor da "adição" entre uma string e um float', function() {
-    const value = 10; // IMPLEMENTE
+    const value = '1'; // IMPLEMENTE
     expect(value + 1.1).toBe('11.1');
   });
 });

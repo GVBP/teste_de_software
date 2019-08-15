@@ -6,12 +6,12 @@ describe('string', function() {
 
   it('retorna o segundo char de uma string', function() {
     const str = 'abcde';
-    expect(str.substr(2, 1)).toBe('b'); // IMPLEMENTE
+    expect(str.substr(1, 1)).toBe('b'); // IMPLEMENTE
   });
 
   it('retorna o os 5 primeiros chars de uma string', function() {
     const str = 'abcdefghi';
-    expect(str.substr(1, 5)).toBe('abcde'); // IMPLEMENTE
+    expect(str.substr(0, 5)).toBe('abcde'); // IMPLEMENTE
   });
 
   it('retorna a concatenação de duas strings', function() {
@@ -25,7 +25,7 @@ describe('string', function() {
     const str_one = 'Hello';
     const str_two = 'World';
 
-    expect(`${str_one} ${str_two}`).toBe('Hello World!'); // IMPLEMENTE
+    expect(`${str_one} ${str_two}!`).toBe('Hello World!'); // IMPLEMENTE
   });
 
   it('replace uma parte da string', function() {
@@ -37,7 +37,7 @@ describe('string', function() {
   it('split uma string', function() {
     const str = 'Isso é uma string';
 
-    expect(str.split(' ')).toBe(['Isso', 'é', 'uma', 'string']); // IMPLEMENTE
+    expect(str.split(' ')).toEqual(['Isso', 'é', 'uma', 'string']); // IMPLEMENTE
   });
 
   it('lower case uma string', function() {
