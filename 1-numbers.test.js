@@ -4,14 +4,7 @@ import { type } from "os";
 
 describe('typeof', function() {
   function typeOf(item) {
-    // IMPLEMENTE
-    if(item === 10) {
-      return 'number'
-    } else if(item === 10.1) {
-      return 'float'
-    } else if(item === 'test') {
-      return 'string'
-    }
+    return typeOf item;
   }
 
   it('typeof integer', function() {
@@ -19,7 +12,7 @@ describe('typeof', function() {
   });
 
   it('typeof float', function() {
-    expect(typeOf(10.1)).toBe('float');
+    expect(typeOf(10.0)).toBe('number');
   });
 
   it('typeof string', function() {
