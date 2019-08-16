@@ -1,5 +1,3 @@
-import { type } from "os";
-
 // Substituia RESPOSTA pela resposta correta
 
 describe('typeof', function() {
